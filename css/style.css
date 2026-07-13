@@ -24,6 +24,19 @@ img {
   border: none;
   border-radius: 10px;
   font-weight: 600;
+  cursor: pointer;
+}
+
+.btn-outline {
+  padding: 10px 30px;
+  background-color: #fff;
+  color: #1d4ed8;
+  border: 2px solid #1d4ed8;
+  border-radius: 10px;
+  font-weight: 600;
+  width: 100%;
+  margin-top: 20px;
+  cursor: pointer;
 }
 
 nav {
@@ -76,6 +89,7 @@ nav {
 .hero-section p {
   font-weight: 500;
   margin: 20px 0 200px;
+  color: #f8f9fa;
 }
 
 /* Meet the Speakers Section */
@@ -145,15 +159,45 @@ nav {
   color: #575757;
 }
 
-.pricing-cards {
-    width: 320px;
-    background: #fff;
-    border: 1px solid #e5e7eb;
-    border-radius: 12px;
-    padding: 28px 26px;
-    box-shadow: 0 4px 12px rgba(0,0,0,.05);
+.pricing-card {
+  width: 320px;
+  background: #fff;
+  border: 1px solid #e5e7eb;
+  border-radius: 12px;
+  padding: 28px 26px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  margin: 50px 0;
+}
+.pricing-card p, h4{
+  color: #575757;
+}
+.features li {
+  padding-left: 18px;
+  margin-bottom: 16px;
+  font-size: 15px;
+  color: #333333;
 }
 
 hr {
-    margin: 22px 0;
+  margin: 22px 0;
+}
+
+.pricing-cards {
+  display: flex;
+  justify-content: space-between;
+}
+
+.pro {
+  background-color: #0d1b2a;
+  color: #fff;
+}
+.pro h4 {
+  color: #1d4ed8;
+}
+.pro li, p {
+  color: #cfd1d4;
+}
+.pro button{
+    width: 100%;
+    margin-top: 20px;
 }
