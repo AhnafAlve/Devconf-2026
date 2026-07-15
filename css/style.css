@@ -64,7 +64,7 @@ nav {
   height: 600px;
   color: #fff;
   background-image:
-    linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+    linear-gradient(#00000099, #00000099),
     url("../assets/banner.jpg");
   background-size: cover;
   background-position: center;
@@ -116,12 +116,12 @@ nav {
   border-radius: 12px;
   overflow: hidden;
   padding: 20px;
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+  box-shadow: 0 8px 20px #00000014;
 }
 
 .speaker-card:hover {
   transform: translateY(-8px);
-  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15);
+  box-shadow: 0 15px 30px #00000026;
 }
 
 .speaker-card img {
@@ -165,7 +165,7 @@ nav {
   border: 1px solid #e5e7eb;
   border-radius: 12px;
   padding: 28px 26px;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  box-shadow: 0 4px 12px #0000000d;
   margin: 50px 0;
 }
 .pricing-card p,
@@ -243,7 +243,7 @@ p {
   grid-template-columns: 1.2fr 1fr;
   border-radius: 22px;
   overflow: hidden;
-  box-shadow: 0 20px 45px rgba(0, 0, 0, 0.12);
+  box-shadow: 0 20px 45px #0000001f;
 }
 
 .venue-map iframe {
@@ -337,4 +337,62 @@ p {
   .direction-btn {
     width: 100%;
   }
+}
+
+
+/* Footer section css  */
+
+.footer {
+    background: #0D1B2A;
+    color: #fff;
+    padding: 60px 20px 30px;
+}
+
+.footer-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 30px;
+    margin-bottom: 30px;
+}
+
+.footer-logo img {
+    height: 45px;
+    display: block;
+}
+
+.social-links {
+    display: flex;
+    align-items: center;
+    gap: 18px;
+}
+
+.social-links a {
+    width: 45px;
+    height: 45px;
+    border: 1px solid #ffffff26;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.social-links a:hover {
+    background: #4f46e5;
+}
+
+.footer hr {
+    border: none;
+    border-top: 1px solid #ffffff26;
+    margin-bottom: 25px;
+}
+
+.copyright {
+    text-align: center;
+    color: #94a3b8;
+    font-size: 0.95rem;
+    margin: 0;
 }
