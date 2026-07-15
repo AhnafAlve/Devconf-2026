@@ -168,7 +168,8 @@ nav {
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
   margin: 50px 0;
 }
-.pricing-card p, h4{
+.pricing-card p,
+h4 {
   color: #575757;
 }
 .features li {
@@ -194,10 +195,146 @@ hr {
 .pro h4 {
   color: #1d4ed8;
 }
-.pro li, p {
+.pro li,
+p {
   color: #cfd1d4;
 }
-.pro button{
+.pro button {
+  width: 100%;
+  margin-top: 20px;
+}
+
+/* AI generated venue section */
+.venue-section {
+  padding: 100px 8%;
+}
+
+.section-header {
+  max-width: 700px;
+  margin: 0 auto 60px;
+  text-align: center;
+}
+
+.section-badge {
+  display: inline-block;
+  padding: 8px 18px;
+  background: #eef4ff;
+  color: #2563eb;
+  border-radius: 999px;
+  font-size: 0.9rem;
+  font-weight: 600;
+  margin-bottom: 18px;
+}
+
+.section-header h2 {
+  font-size: 2.6rem;
+  margin-bottom: 15px;
+}
+
+.section-header p {
+  color: #666;
+  line-height: 1.7;
+}
+
+.venue-container {
+  max-width: 1200px;
+  margin: auto;
+  display: grid;
+  grid-template-columns: 1.2fr 1fr;
+  border-radius: 22px;
+  overflow: hidden;
+  box-shadow: 0 20px 45px rgba(0, 0, 0, 0.12);
+}
+
+.venue-map iframe {
+  width: 100%;
+  height: 100%;
+  min-height: 420px;
+  border: 0;
+}
+
+.venue-content {
+  background: #111827;
+  color: #fff;
+  padding: 50px 45px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.venue-content h3 {
+  font-size: 2rem;
+  margin-bottom: 35px;
+}
+
+.venue-item {
+  margin-bottom: 24px;
+}
+
+.venue-item span {
+  display: block;
+  color: #60a5fa;
+  font-weight: 600;
+  margin-bottom: 6px;
+}
+
+.venue-item p {
+  color: #d1d5db;
+  line-height: 1.7;
+}
+
+.direction-btn {
+  margin-top: 18px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: max-content;
+  padding: 14px 28px;
+  background: #2563eb;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 12px;
+  font-weight: 600;
+  transition: 0.3s;
+}
+
+.direction-btn:hover {
+  background: #3b82f6;
+  transform: translateY(-3px);
+}
+
+@media (max-width: 900px) {
+  .venue-container {
+    grid-template-columns: 1fr;
+  }
+
+  .venue-map iframe {
+    min-height: 350px;
+  }
+
+  .venue-content {
+    padding: 35px 28px;
+  }
+
+  .section-header h2 {
+    font-size: 2rem;
+  }
+}
+
+@media (max-width: 600px) {
+  .venue-section {
+    padding: 70px 20px;
+  }
+
+  .section-header {
+    margin-bottom: 40px;
+  }
+
+  .section-header h2 {
+    font-size: 1.7rem;
+  }
+
+  .direction-btn {
     width: 100%;
-    margin-top: 20px;
+  }
 }
